@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">¡Bienvenido a Soy talento! Por favor ingrese sus datos</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Nombre y apellido</label>
+            <input type="text"
+                    id="NombreyApellido"
+                    name="NombreyApellido"
+                    placeholder="Escribe tu nombre"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Correo Electrónico</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ingrese su correo"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Número telefónico</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Ingrese su número telefónico"/>
+          </div>
+          <div class="user-input-box">
+            <label for="genero">Género</label>
+            <div class="custom-select" style="width:200px;">
+              <select>
+                <option value="0">Seleccione Sexo:</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">Otro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="gender-details-box2">
+            <span class="gender-title2">Soy:</span>
+            <div class="gender-category2"> 
+              <input type="radio" name="gender" id="cantante">
+              <label for="cantante">Cantante</label>
+              <input type="radio" name="gender" id="bailarin">
+              <label for="bailarin">Bailarín</label>
+              <input type="radio" name="gender" id="mago">
+              <label for="mago">Mago</label>
+              <input type="radio" name="gender" id="pintor">
+              <label for="pintor">Pintor</label>
+              <input type="radio" name="gender" id="actor">
+              <label for="actor">Actor</label>
+            </div>
+          </div>
+          </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Registrar">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
